@@ -73,7 +73,7 @@ void args_parser<T>::evaluate(){
 	std::cout << "\tFunction shall be evaluated." << std::endl;
 #endif
 					auto begin = in_args.begin() + ii + 1;
-					auto end = in_args.begin() + ii + 1 + item->second.num_args;
+					auto end = in_args.begin() + ii + item->second.num_args;
 					item->second.fp(parsed_data, begin, end);
 					ii += item->second.num_args; // Increment over expected argument parameters
 				} else {
